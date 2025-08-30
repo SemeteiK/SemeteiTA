@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фильмы по жанрам</title>
+  <link rel="stylesheet" href="films.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="search-dropdown" id="searchResults"></div>
+
+    <div class="logo-title">
+      <img src="images/logo_transparent.png" alt="Логотип" class="logo" />
+    <h2>Кинотеатр "Семетей"</h2>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="films.html">Фильмы</a>
+      <a href="contacts.html">Связь с нами</a>
+      <a href="seances.html">Сеансы</a>
+      <a href="about us.html">О нас</a>
+    </nav>
+  </header>  <div class="container">
+    <h1>Фильмы по жанрам</h1><div class="genre-buttons">
+  <button onclick="showGenre('action')">Боевик</button>
+
+  <button onclick="showGenre('animation')">Мультфильмы</button>
+  <button onclick="showGenre('drama')">Драма</button>
+  <button onclick="showGenre('comedy')">Комедия</button>
+  <button onclick="showGenre('fantasy')">Ужасы</button>
+</div>
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Поиск фильма..." oninput="filterFilms()" />
+</div>
+
+<div id="action" class="genre-section active">
+  <h2 class="genre-title">Боевик</h2>
+  <div class="film-grid">
+    <div class="movie-card">
+     <a href="https://www.youtube.com/watch?v=1Ks04MFo_Co"> <img src="images/жаныбек.jfif" alt="Жаныбек"></a>
+      <div class="movie-info">
+        <h3><a href="janybek.html">Жаныбек</a></h3>
+        <p>Популярный фильм в своём жанре. Не пропустите!</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="animation" class="genre-section">
+  <h2 class="genre-title">Мультфильмы</h2>
+  <div class="film-grid">
+    <div class="movie-row">
+      <div class="movie-card">
+        <img src="images/Без названия (3).jfif" alt="Моана 2">
+        <div class="movie-info">
+          <h4><a href="moana 2.html">Моана 2</a></h4>
+          <p>Продолжение.</p>
+        </div>
+      </div>
+    
+      <div class="movie-card">
+        <img src="images/гадкий я 4.jfif" alt="Гадкий я 4">
+        <div class="movie-info">
+          <h4><a href="minion 4.html">Гадкий я 4</a></h4>
+          <p>Проказники снова в деле!</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="images/соник.jfif" alt="Гадкий я 4">
+        <div class="movie-info">
+          <h4><a href="sonic.html">Соник в кино 3</a></h4>
+          <p>Проказники снова в деле!</p>
+        </div>
+      </div>
+   
+      <div class="movie-card">
+        <img src="images/удача.jfif" alt="Гадкий я 4">
+        <div class="movie-info">
+          <h4><a href="luck.html">Удача</a></h4>
+          <p>Проказники снова в деле!</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="images/лука.jfif">
+        <div class="movie-info">
+          <h4><a href="luka.html">Лука</a></h4>
+          <p>Поучительная история</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="movie-card">
+      <img src="images/eve.webp">
+      <div class="movie-info">
+        <h4><a href="everest.html">Эверест</a></h4>
+        <p>Путешествие на самую высокую точку планеты</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="drama" class="genre-section">
+  <h2 class="genre-title">Драма</h2>
+  <div class="movie-row">
+    <div class="movie-card">
+      <img src="images/102.jpg" alt="Моана 2">
+      <div class="movie-info">
+        <h4><a href="film card3.html">102</a></h4>
+        <p>рассказывает историю Армана, сотрудника милиции, работающего в службе 102.</p>
+      </div>
+    </div>
+  
+    <div class="movie-card">
+      <img src="images/от.jfif" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="opening.html">От</a></h4>
+        <p>Казахстанский хоррор-фильм, который рассказывает историю о бытовом насилии, замаскированном под мистическую историю</p>
+      </div>
+    </div>
+    <div class="movie-card">
+      <img src="images/открытие.jfif" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="opening.html">Открытие</a></h4>
+        <p>На грани между наукой и чувствами.</p>
+      </div>
+    </div>
+ 
+    <div class="movie-card">
+      <img src="images/sos.webp" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="sos.html">SOS жардамага</a></h4>
+        <p>это напряжённый триллер о страхе, предательстве и том, как настоящие чувства проявляются на грани жизни и смерти.</p>
+      </div>
+    </div>
+    <div class="movie-card">
+      <img src="images/керексин.jpg" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="керексин.html">Керексин</a></h4>
+        <p>Душевный фильм</p>
+      </div>
+    </div>
+    </div>
+    <div class="movie-card">
+      <img src="images/агатай.webp" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="agatai.html">Агатай</a></h4>
+        <p> комедия, фантастика, о беззаботном аферисте</p>
+      </div>
+    </div>
+
+  </div>
+  
+  </div>
+</div>
+</div>
+
+<div id="comedy" class="genre-section">
+  <h2 class="genre-title">Комедия</h2>
+  <div class="movie-row">
+    <div class="movie-card">
+      <img src="images/жезде.jfif" alt="Моана 2">
+      <div class="movie-info">
+        <h4><a href="film info.html">Жезде</a></h4>
+        <p>После случайного наезда на девушку, двое друзей отвозят её в больницу, где один из них притворяется её парнем, чтобы избежать ответственности.</p>
+      </div>
+    </div>
+  
+    <div class="movie-card">
+      <img src="images/аяш.jfif" alt= "Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="Ayash.html">Аяш 4</a></h4>
+        <p>а этот раз Сапар и Катя планируют сумасшедшее путешествие в далёкую Индию.</p>
+      </div>
+    </div>
+    <div class="movie-card">
+      <img src="images/гулу.jfif" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="jigit.html">Жигиттин гулу</a></h4>
+        <p>кыргызская комедия, рассказывающая о девушке из обеспеченной семьи, которая оказывается в сложной ситуации.</p>
+      </div>
+    </div>
+ 
+    <div class="movie-card">
+      <img src="images/жубайым.jfif" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="jubayim.html">Жубайым</a></h4>
+        <p>Улук решает развестись с женой Элизой после двух месяцев брака. Увидев это, его родители решают устроить ему урок</p>
+      </div>
+    </div>
+    
+    <div class="movie-card">
+      <img src="images/карындаш.jfif" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="karyndash.html">Карындаш</a></h4>
+        <p>Адеми не любит, когда родители говорят, что во времена СССР.</p>
+      </div>
+    </div>
+    </div>
+    <div class="movie-card">
+      <img src="images/кудай.webp" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="кудай сактасын.html">Кудай Сактасын</a></h4>
+        <p>Смешная комедия для всей семьи</p>
+  </div>
+  
+  </div>
+</div>
+</div>
+
+<div id="fantasy" class="genre-section">
+  <h2 class="genre-title">Ужасы</h2>
+
+  <div class="movie-row">
+    <div class="movie-card">
+      <img src="images/kara.jpg" alt="Моана 2">
+      <div class="movie-info">
+        <h4><a href="film card.html">Кара дуба</a></h4>
+        <p>рассказывает историю Айжан, девушки из богатой семьи, которая становится жертвой колдовства.</p>
+      </div>
+    </div>
+  
+    <div class="movie-card">
+      <img src="images/ифрит.webp" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="ifrit.html">Ифрит</a></h4>
+        <p>Мифология и супергероика в одном лице.</p>
+      </div>
+    </div>
+    <div class="movie-card">
+      <img src="images/койнок.jfif" alt="Гадкий я 4">
+      <div class="movie-info">
+        <h4><a href="kyzyl.html">Кызыл койнок</a></h4>
+        <p>На берегу Иссык-Куля молодая семья начинает новую жизнь, восстанавливая старое кафе.</p>
+      </div>
+    </div>
+ 
+    
+    </div>
+  </div>
+  
+  </div>
+</div>
+</div>
+  </div>  <script>
+    function showGenre(id) {
+      document.querySelectorAll('.genre-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+
+    function filterFilms() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const activeSection = document.querySelector('.genre-section.active');
+      const films = activeSection.querySelectorAll('.film-card');
+
+      films.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        card.style.display = title.includes(query) ? 'block' : 'none';
+      });
+    }
+    
+  </script>
+  <script>
+    const searchInput = document.querySelector('.header-search input');
+    const searchResults = document.getElementById('searchResults');
+  
+    searchInput.addEventListener('input', function () {
+      const searchValue = this.value.toLowerCase();
+      const films = document.querySelectorAll('.film-card');
+  
+      searchResults.innerHTML = '';
+  
+      if (searchValue.trim() === '') {
+        searchResults.style.display = 'none';
+        return;
+      }
+  
+      let found = 0;
+  
+      films.forEach(film => {
+        const title = film.querySelector('h3').textContent.toLowerCase();
+        const imgSrc = film.querySelector('img').getAttribute('src');
+        const link = film.querySelector('a').getAttribute('href');
+  
+        if (title.includes(searchValue)) {
+          found++;
+          const resultItem = document.createElement('a');
+          resultItem.className = 'search-result';
+          resultItem.href = link;
+          resultItem.innerHTML = `
+            <img src="${imgSrc}" alt="">
+            <span>${film.querySelector('h3').textContent}</span>
+          `;
+          searchResults.appendChild(resultItem);
+        }
+      });
+  
+      searchResults.style.display = found > 0 ? 'block' : 'none';
+    });
+  </script>
+  </body>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Кинотеатр "Семетей" <br>Все права защищены.</p>
+    </div>
+  </footer>
+</html>
